@@ -8,8 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "oxlint .",
-    "lint:fix": "oxlint --fix .",
+    "lint": "oxlint --type-aware . && eslint .",
+    "lint:fix": "oxlint --type-aware . --fix && eslint . --fix",
     "typecheck": "nuxt typecheck",
     "check": "pnpm lint && pnpm typecheck"
   },
@@ -19,7 +19,9 @@
     "vue-router": "^5.2.0"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^1.16.0",
     "@unocss/nuxt": "^66.7.5",
+    "eslint-plugin-oxlint": "^1.75.0",
     "oxfmt": "^0.60.0",
     "oxlint": "^1.75.0",
     "typescript": "^7.0.2",
