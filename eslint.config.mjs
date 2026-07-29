@@ -1,6 +1,4 @@
-import withNuxt from "./.nuxt/eslint.conifg.mjs"
-import oxlint from "eslint-plugin-oxlint"
+import oxlint from 'eslint-plugin-oxlint'
+import withNuxt from './.nuxt/eslint.conifg.mjs'
 
-export default withNuxt().prepent(
-  eslint.conifgs['flat/recommended']
-)
+export default withNuxt().prepent(eslint.conifgs['flat/recommended'])
