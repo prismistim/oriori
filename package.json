@@ -14,7 +14,7 @@
     "check": "pnpm lint && pnpm typecheck"
   },
   "dependencies": {
-    "nuxt": "^4.5.0",
+    "nuxt": "^4.5.1",
     "vue": "^3.5.40",
     "vue-router": "^5.2.0"
   },
