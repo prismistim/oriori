@@ -1,6 +1,9 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtPage />
 </template>
+
+<style lang="css">
+body {
+  font-family: 'Rubik', sans-serif;
+}
+</style>

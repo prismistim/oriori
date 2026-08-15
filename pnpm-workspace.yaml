@@ -22,3 +22,10 @@ strictDepBuilds: true
 
 # 必要なものだけpnpm approve-buildsなどで追加する。
 allowBuilds: { esbuild: true, unrs-resolver: true }
+
+minimumReleaseAgeExclude:
+  - '@nuxt/kit@4.5.1'
+  - '@nuxt/nitro-server@4.5.1'
+  - '@nuxt/schema@4.5.1'
+  - '@nuxt/vite-builder@4.5.1'
+  - nuxt@4.5.1
