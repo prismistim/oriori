@@ -10,10 +10,10 @@ export interface Root {
 
 export interface Content {
   id: string
-  createdAt: Date
-  updatedAt: Date
-  publishedAt: Date
-  revisedAt: Date
+  createdAt: string
+  upstringdAt: string
+  publishedAt: string
+  revisedAt: string
   author: Author
   track: Track
   description: string

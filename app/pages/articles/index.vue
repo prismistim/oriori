@@ -1,24 +1,16 @@
 <script setup lang="ts">
-import type { Article, Articles } from '#shared/types/Article'
+import ArticleList from '@/components/articles/list/Index.vue'
 
-const items = ref()
-
-onMounted(async () => {
-  const { data: articles } = await useFetch('/api/articles', {
-    query: {
-      limit: 5,
-      offset: 0
-    }
-  })
-
-  console.log(articles.value)
-  if (!articles.value?.contents) return
-  items.value = articles.value?.contents
+const { data: articles } = await useFetch('/api/articles', {
+  query: {
+    limit: 5,
+    offset: 0
+  }
 })
 </script>
 
 <template>
   <NuxtLayout>
-    {{ items }}
+    <ArticleList v-if="articles?.contents" :items="articles.contents"></ArticleList>
   </NuxtLayout>
 </template>

@@ -1,9 +1,9 @@
 export interface Track {
   id: string
-  createdAt: Date
-  updatedAt: Date
-  publishedAt: Date
-  revisedAt: Date
+  createdAt: string
+  upstringdAt: string
+  publishedAt: string
+  revisedAt: string
   title: string
   artist: string
   albumTitle: string

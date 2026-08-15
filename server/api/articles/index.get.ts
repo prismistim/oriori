@@ -3,7 +3,7 @@ import type { Article, Articles } from '#shared/types/Article'
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
 
-  return microcmsClient.getList<Articles>({
+  return microcmsClient.getList<Article>({
     endpoint: 'articles',
     queries: {
       limit: Number(query.limit ?? 10),
